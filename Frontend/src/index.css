@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    /* background-color: black; */
+    /* background: linear-gradient(black, orange); */
+    background: radial-gradient(circle at top, rgb(255, 94, 0) , black)
+}
