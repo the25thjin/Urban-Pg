@@ -6,7 +6,6 @@
 @tailwind utilities;
 
 body{
-    /* background-color: black; */
-    /* background: linear-gradient(black, orange); */
+    overflow-x: hidden;
     background: radial-gradient(circle at top, rgb(255, 94, 0) , black)
 }
