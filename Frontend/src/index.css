@@ -7,5 +7,5 @@
 
 body{
     overflow-x: hidden;
-    background: radial-gradient(circle at top, rgb(255, 94, 0) , black)
+    background: radial-gradient(circle at top,black, rgb(155, 59, 3) , black )
 }
