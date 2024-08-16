@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily:{
         Poppins: "Poppins",
-        Inter : "Inter"
+        Inter : "Inter",
+        Crimson : "Crimson Text"
       },
       
     },

@@ -9,7 +9,6 @@ function WhyUs(){
                 <li>Affordable Options</li>
                 <li>User-Friendly Search</li>
                 <li>Genuine Reviews</li>
-
             </ul>
             </div>
         
