@@ -21,7 +21,7 @@ function Contact(){
                     <textarea className=" resize-none bg-[#0e0901bd] mt-2 w-[350px] h-[90px] rounded p-1 outline-none"  placeholder="Message"/>
                 </div>
                 <div>
-                    <button className="w-[350px] bg-yellow-700 h-[35px] rounded hover:bg-yellow-800 ">Submit</button>
+                    <button className="w-[350px] shadow-2xl bg-yellow-700 h-[35px] rounded hover:bg-yellow-800 transition ease-in-out duration-300 hover:scale-y-110">Submit</button>
                 </div>
             </div>
             <div>
