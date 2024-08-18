@@ -2,7 +2,8 @@ import image1 from "../assets/About us/1st.png"
 import image2 from "../assets/About us/2nd.png"
 import image3 from "../assets/About us/3rd.png"
 import image4 from "../assets/About us/4th.png"
-
+import {motion} from "framer-motion"
+import {textVariant, fadeIn} from "../utils/motion"
 function About(){
     return(
         <>
@@ -11,6 +12,7 @@ function About(){
                 <h1 className="text-[#d4d4d4] font-Poppins font-extrabold text-[50px] m-28 relative z-[-1] top-14 left-[57%]">About Us</h1>
             </div>  
             <div className="font-Poppins flex-col flex-wrap h-[1400px]">
+        
                 <div className=" text-white h-[535px] w-[532px] relative z-[-1] left-24 top-[-200px] rounded-3xl bg-[#653E3E] bg-opacity-45 ">
                     <img  src={image1}/>
                     <h1 className="p-2 text-2xl font-semibold text-center">Who are we?</h1>

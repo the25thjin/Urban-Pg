@@ -1,4 +1,4 @@
-export const textVarient = (delay)=>{
+export const textVariant = (delay)=>{
    return{
     hidden:{
         y:-50,
@@ -56,7 +56,7 @@ export const zoomIn = (delay ,  duration) =>{
     }
 }
 
-export const slideIn = (direction, delay, type, duration)=>{
+export const slideIn = (direction, type, delay,duration)=>{
     return{
         hidden:{
             opacity: 0,
