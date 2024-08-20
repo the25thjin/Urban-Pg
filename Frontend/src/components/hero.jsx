@@ -1,5 +1,4 @@
 import hero from "../assets/hero.jpg"
-import hero2 from "../assets/hero2.jpg"
 import hero3 from "../assets/hero3.png"
 
 function Hero(){
