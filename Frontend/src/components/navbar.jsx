@@ -1,4 +1,6 @@
-import{logo , menu , close}  from "../assets/logo.png"
+import  logo   from "../assets/logo.png"
+import  close   from "../assets/close.svg"
+import  menu   from "../assets/menu.svg"
 
 function Navbar(){
     return(
