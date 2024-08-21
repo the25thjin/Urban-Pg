@@ -5,12 +5,12 @@ function WhyUs(){
     return(
         <>
         
-        <div className="text-white text-xl z-[-1] relative left-[18%] top-[-300px]">
+        <div className="text-white top-48 h-full w-screen text-xl z-[-1] relative sm:left-[18%] sm:top-[-300px] ">
        
-           <h1 className="text-[#d4d4d4] font-Poppins font-extrabold text-[50px]"> Why Us? </h1>
+           <h1 className="text-[#d4d4d4]  font-Poppins font-extrabold text-[50px] text-center sm:text-left"> Why Us? </h1>
         
-            <ul className=" mt-6 ml-10 list-disc list-inside" >  
-                <li >No Brokerage Fees</li>
+            <ul className=" mt-6 sm:ml-10 sm:list-disc sm:list-inside   text-center sm:text-left p-3 space-y-2 sm:space-y-0" >  
+                <li>No Brokerage Fees</li>
                 <li>Affordable Options</li>
                 <li>User-Friendly Search</li>
                 <li>Genuine Reviews</li>

@@ -7,12 +7,12 @@ import img4 from "../assets/Testimonials/four.png"
 function Testimonials(){
     return(
         <>
-        <div className="relative z-[-1] top-[-200px]">
+        <div className="relative z-[-1] top-60 sm:top-[-200px]">
             <div>
                 <h1 className="text-[#d4d4d4] font-Poppins text-center  font-extrabold text-[50px]">Our Testimonials</h1>
             </div>
-            <div className="flex mt-10 text-white font-Crimson justify-around">
-           
+            <div className="sm:flex sm:flex-row flex flex-col space-y-6 sm:space-y-0 mt-10 text-white font-Crimson justify-center items-center sm:justify-around h-full w-screen ">
+                 
                 <div className=" h-[345px] w-[268px] bg-[#010101]  bg-opacity-50 rounded-3xl">
                     <img src={img1} className="size-[150px] mx-auto mt-4 "/>
                     <p className="text-center mt-2 p-4 ">"I found the perfect PG near my college through this site. The process was quick, easy, and stress-free. Highly recommend to all students!"</p>

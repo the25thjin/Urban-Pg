@@ -9,7 +9,7 @@ import Contact from "./components/contact"
 
 function App() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Navbar/>
       <Hero/>
       <About/>
@@ -17,7 +17,7 @@ function App() {
       <Testimonials/>
       <Contact/>
       <Footer/>
-    </>
+    </div>
   )
 }
 
