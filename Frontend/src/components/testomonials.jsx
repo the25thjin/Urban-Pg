@@ -7,11 +7,11 @@ import img4 from "../assets/Testimonials/four.png"
 function Testimonials(){
     return(
         <>
-        <div className="relative z-[-1] top-60 sm:top-[-200px]">
+        <div className="relative z-[-1] top-60 xl:top-[-200px]">
             <div>
                 <h1 className="text-[#d4d4d4] font-Poppins text-center  font-extrabold text-[50px]">Our Testimonials</h1>
             </div>
-            <div className="sm:flex sm:flex-row flex flex-col space-y-6 sm:space-y-0 mt-10 text-white font-Crimson justify-center items-center sm:justify-around h-full w-screen ">
+            <div className="sm:flex sm:flex-row flex flex-col space-y-6 sm:space-y-0 mt-10 sm:space-x-6 text-white font-Crimson justify-center items-center sm:justify-around h-full w-screen ">
                  
                 <div className=" h-[345px] w-[268px] bg-[#010101]  bg-opacity-50 rounded-3xl">
                     <img src={img1} className="size-[150px] mx-auto mt-4 "/>
@@ -27,7 +27,7 @@ function Testimonials(){
                     <img src={img3} className="size-[150px] mx-auto mt-4 "/>
                     <p className="text-center mt-2 p-4">"The no-brokerage policy was a lifesaver. I saved so much money and found a great flat with all the amenities I needed."</p>
                 </div>
-                <div className=" h-[345px] w-[268px] bg-[#010101] bg-opacity-50 rounded-3xl">
+                <div className=" hidden xl:block h-[345px] w-[268px] bg-[#010101] bg-opacity-50 rounded-3xl">
                     <img src={img4} className="size-[150px] mx-auto mt-4 "/>
                     <p className="text-center mt-2 p-4 ">"This website made finding accommodation so simple. The verified listings and genuine reviews helped me choose the best option without any doubts."</p>
                 </div>

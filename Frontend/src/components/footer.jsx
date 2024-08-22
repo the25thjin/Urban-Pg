@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <div className=" w-screen h-full relative top-72 sm:top-0 font-Inter bg-[#000000] bg-opacity-35 sm:h-[60px] flex sm:flex-row flex-col space-y-4 sm:space-y-0 justify-between p-4 items-center  text-white  ">
+      <div className=" w-screen h-full relative top-72 xl:top-0 font-Inter bg-[#000000] bg-opacity-35 xl:h-[60px] flex xl:flex-row flex-col space-y-4 xl:space-y-0 justify-between p-4 items-center  text-white  ">
         <div>
         <span>© 2024 UrbanPg. All rights reserved.</span>
         </div>
