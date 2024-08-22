@@ -2,7 +2,7 @@ import logo from "../assets/logo.png"
 
 function Contact(){
     return(<>
-    <div className="text-[#d4d4d4] relative top-80 xl:top-0 font-Poppins mb-16">
+    <div className="text-[#d4d4d4] z-[-1] relative top-80 xl:top-0 font-Poppins mb-16">
         <div>
             <h1 className="text-[#d4d4d4] font-Poppins text-center  font-extrabold text-[50px]">Contact Us</h1>
         </div>
