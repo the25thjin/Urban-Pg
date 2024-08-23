@@ -1,10 +1,12 @@
 import logo from "../assets/logo.png"
-
+import { useState } from "react"
 function Contact(){
+    // const [form, setForm] = useState({name:"",email:"",message:""})
+    const [loading, setLoading] = useState(false)
     return(<>
-    <div className="text-[#d4d4d4] z-[-1] relative top-80 xl:top-0 font-Poppins mb-16">
+    <div className="text-[#d4d4d4]  relative top-80 xl:top-0 font-Poppins mb-16">
         <div>
-            <h1 className="text-[#d4d4d4] font-Poppins text-center  font-extrabold text-[50px]">Contact Us</h1>
+            <h1 className="text-[#d4d4d4] z-[-1] font-Poppins text-center  font-extrabold text-[50px]">Contact Us</h1>
         </div>
         <div className="flex justify-around  items-center mt-20 ">
             <div className=" w-[350px] m-4  xl:h-[440px] xl:w-[400px] bg-[#793406] flex-col  p-6 rounded-3xl">

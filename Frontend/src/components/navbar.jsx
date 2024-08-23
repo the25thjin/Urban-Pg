@@ -18,19 +18,7 @@ function Navbar(){
             <li className="cursor-pointer">Contact</li>
             </ul> 
         </div>
-        {/* <div className="sm:hidden  h-[180px] w-[150px] bg-orange-700 top-16 right-10 pt-3 relative rounded-2xl">
-        <img onClick={()=>{
-            setToggle(!toggle)
-        }} className=" ml-24  size-[30px] cursor-pointer" src={toggle?menu:close}/>
-       
-            <ul className="list-none text-left p-4">
-            <li className="cursor-pointer">Home</li>
-            <li className="cursor-pointer">About Us</li>
-            <li className="cursor-pointer">Testimonials</li>
-            <li className="cursor-pointer">Contact</li>
-            </ul>
         
-        </div> */}
         <div className="sm:hidden flex flex-1 justify-end items-center ">
                 <img src={toggle?close:menu} alt="menu" className=" mr-9 size-[30px] cursor-pointer" onClick={()=>{setToggle(!toggle)}}/>
                 <div className={`${!toggle ? 'hidden':'flex'} p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl bg-orange-800  `} >
