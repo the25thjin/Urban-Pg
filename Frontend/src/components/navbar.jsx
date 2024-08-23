@@ -18,8 +18,10 @@ function Navbar(){
             <li className="cursor-pointer">Contact</li>
             </ul> 
         </div>
-        <div className="sm:hidden hidden h-[180px] w-[150px] bg-orange-700 top-16 right-10 pt-3 relative rounded-2xl">
-        <img className=" ml-24  size-[30px] cursor-pointer" src={close}/>
+        {/* <div className="sm:hidden  h-[180px] w-[150px] bg-orange-700 top-16 right-10 pt-3 relative rounded-2xl">
+        <img onClick={()=>{
+            setToggle(!toggle)
+        }} className=" ml-24  size-[30px] cursor-pointer" src={toggle?menu:close}/>
        
             <ul className="list-none text-left p-4">
             <li className="cursor-pointer">Home</li>
@@ -28,6 +30,25 @@ function Navbar(){
             <li className="cursor-pointer">Contact</li>
             </ul>
         
+        </div> */}
+        <div className="sm:hidden flex flex-1 justify-end items-center ">
+                <img src={toggle?menu:close} alt="menu" className=" mr-9 size-[30px] cursor-pointer" onClick={()=>{setToggle(!toggle)}}/>
+                <div className={`${!toggle ? 'hidden':'flex'} p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl bg-orange-800  `} >
+                    <ul className="text-[#F2C046] list-none flex flex-col gap-4 justify-end items-start ">
+                    <li className="cursor-pointer " onClick={()=>{
+                        setToggle(!toggle)
+                    }}>Home</li>
+                    <li className="cursor-pointer "  onClick={()=>{
+                        setToggle(!toggle)
+                    }} >About Us</li>
+                    <li className="cursor-pointer"  onClick={()=>{
+                        setToggle(!toggle)
+                    }}>Testimonials</li>
+                    <li className="cursor-pointer"  onClick={()=>{
+                        setToggle(!toggle)
+                    }}>Contact</li>
+                    </ul>
+                </div>
         </div>
     </div>
     </>
