@@ -32,7 +32,7 @@ function Navbar(){
         
         </div> */}
         <div className="sm:hidden flex flex-1 justify-end items-center ">
-                <img src={toggle?menu:close} alt="menu" className=" mr-9 size-[30px] cursor-pointer" onClick={()=>{setToggle(!toggle)}}/>
+                <img src={toggle?close:menu} alt="menu" className=" mr-9 size-[30px] cursor-pointer" onClick={()=>{setToggle(!toggle)}}/>
                 <div className={`${!toggle ? 'hidden':'flex'} p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl bg-orange-800  `} >
                     <ul className="text-[#F2C046] list-none flex flex-col gap-4 justify-end items-start ">
                     <li className="cursor-pointer " onClick={()=>{
