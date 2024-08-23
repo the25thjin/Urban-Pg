@@ -18,6 +18,7 @@ function Contact(){
         .then(res=>{
             alert("Thanks for contacting us! We will get back to you soon.")
             setLoading(false)
+            setForm({name:'',email:'',message:''})
         })
         .catch(err=> {
             alert("Some error occurred")
