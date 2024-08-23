@@ -1,7 +1,6 @@
 import logo from "../assets/logo.png"
 import { useState ,useRef} from "react"
 
-//https://script.google.com/macros/s/AKfycbz57a6y34wtdE1uYL8ZrWKcF_RMEjcxfx-3TmHyl-GGVJ-v07vjCRqX9BcmyK3n12XX/exec
 function Contact(){
     const url = "https://script.google.com/macros/s/AKfycbw7iWaSfQ6qN_b4ffBcyF7jajUMVgxliNRPgdYnTIQH5AxXTqsjkaLEJ91ZA1mU0pr2SA/exec"
     const [form, setForm] = useState({name:"",email:"",message:""})
