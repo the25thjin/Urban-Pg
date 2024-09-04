@@ -27,13 +27,13 @@ function Contact(){
         })
     }
     return(<>
-    <form ref={formRef}
+    <form id="contact" ref={formRef}
           onSubmit={handleSubmit} >
     <div className="text-[#d4d4d4]  relative top-80 xl:top-0 font-Poppins mb-16">
         <div >
             <h1 className="text-[#d4d4d4] relative z-[-1]  font-Poppins text-center  font-extrabold text-[50px]">Contact Us</h1>
         </div>
-        <div className="flex justify-around  items-center mt-20 ">
+        <div className="flex justify-around  items-center  mt-20 ">
             <div className=" w-[350px] m-4  xl:h-[440px] xl:w-[400px] bg-[#793406] flex-col  p-6 rounded-3xl">
                 <div>
                     <h1 className="">What's your name?</h1>

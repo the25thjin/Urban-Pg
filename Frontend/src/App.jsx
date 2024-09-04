@@ -7,8 +7,11 @@ import WhyUs from "./components/whyus"
 import Testimonials from "./components/testomonials"
 import Contact from "./components/contact"
 
+import {BrowserRouter} from "react-router-dom"
+
 function App() {
   return (
+    <BrowserRouter>
     <div className="overflow-x-hidden">
       <Navbar/>
       <Hero/>
@@ -18,6 +21,7 @@ function App() {
       <Contact/>
       <Footer/>
     </div>
+    </BrowserRouter>
   )
 }
 
