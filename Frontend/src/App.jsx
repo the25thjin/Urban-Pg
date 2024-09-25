@@ -1,11 +1,11 @@
 import React from "react"
-import Navbar from "./components/navbar"
-import Hero from "./components/hero"
-import Footer from "./components/footer"
-import About from "./components/about"
-import WhyUs from "./components/whyus"
-import Testimonials from "./components/testomonials"
-import Contact from "./components/contact"
+import Navbar from "./components/Homepage/navbar"
+import Hero from "./components/Homepage/hero"
+import Footer from "./components/Homepage/footer"
+import About from "./components/Homepage/about"
+import WhyUs from "./components/Homepage/whyus"
+import Testimonials from "./components/Homepage/testomonials"
+import Contact from "./components/Homepage/contact"
 
 import {BrowserRouter} from "react-router-dom"
 

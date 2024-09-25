@@ -1,7 +1,7 @@
-import img1 from "../assets/Testimonials/one.png"
-import img2 from "../assets/Testimonials/two.png"
-import img3 from "../assets/Testimonials/three.png"
-import img4 from "../assets/Testimonials/four.png"
+import img1 from "../../assets/Testimonials/one.png"
+import img2 from "../../assets/Testimonials/two.png"
+import img3 from "../../assets/Testimonials/three.png"
+import img4 from "../../assets/Testimonials/four.png"
 
 
 function Testimonials(){

@@ -1,7 +1,7 @@
-import image1 from "../assets/About us/1st.png"
-import image2 from "../assets/About us/2nd.png"
-import image3 from "../assets/About us/3rd.png"
-import image4 from "../assets/About us/4th.png"
+import image1 from "../../assets/About us/1st.png"
+import image2 from "../../assets/About us/2nd.png"
+import image3 from "../../assets/About us/3rd.png"
+import image4 from "../../assets/About us/4th.png"
 
 function About(){
     return(
