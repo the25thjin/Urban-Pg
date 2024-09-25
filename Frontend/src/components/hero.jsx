@@ -1,5 +1,5 @@
-import hero from "../assets/hero.jpg"
-import hero3 from "../assets/hero3.png"
+import hero from "../assets/hero.webp"
+import hero3 from "../assets/hero3.webp"
 
 function Hero(){
     return(
