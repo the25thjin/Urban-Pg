@@ -14,8 +14,8 @@ export default {
       },
       backgroundImage:{
         'custom-radial': 'radial-gradient(circle at top,black, rgb(87, 34, 4) , black )',
-        'loginHero2' : "url('./src/assets/Login/loginHero2.webp')",
-        'loginHero' : "url('./src/assets/Login/loginHero.webp')"
+        'loginHero2' : "url('./src/assets/loginHero2.webp')",
+        'loginHero' : "url('./src/assets/loginHero.webp')"
 
       },
       screens:{
