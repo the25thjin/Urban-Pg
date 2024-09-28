@@ -1,6 +1,6 @@
 import hero from "../../assets/hero.webp"
 import hero3 from "../../assets/hero3.webp"
-
+import { Link } from "react-router-dom"
 function Hero(){
     return(
         <>
@@ -15,9 +15,9 @@ function Hero(){
                 <h2 className="sm:block hidden font-normal mt-20 text-lg">Need affordable hostels, PGs, or flats near your college?</h2><br/>
                 <h2 className="sm:block hidden font-normal text-lg">We’ve got you covered!  </h2><br/>
                 <h2 className="sm:block hidden font-normal text-lg">Discover hidden gems for your perfect college home.</h2><br/>
-
-                <button className="bg-orange-700  text-white  h-14 w-36 rounded-xl sm:mt-10 transition duration-300 ease-in-out shadow-2xl  shadow-orange-700 hover:bg-orange-900 hover:scale-110">Your Next Home</button>
-
+                <Link to={'/sign-up'}>
+                <button  className="bg-orange-700  text-white  h-14 w-36 rounded-xl sm:mt-10 transition duration-300 ease-in-out shadow-2xl  shadow-orange-700 hover:bg-orange-900 hover:scale-110">Your Next Home</button>
+                </Link>
                 </div>
             </div>
         </div>

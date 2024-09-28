@@ -30,7 +30,7 @@ function Navbar() {
           <ul className="flex justify-evenly text-xl gap-7 mr-10 ">
             {/* <NavLink to="/home">  <li className="cursor-pointer transition ease-in-out duration-200 hover:text-yellow-500">Home</li></NavLink> */}
             <NavLink
-              to="/about"
+              to="/#about"
               className={({ isActive }) => (isActive ? "text-yellow-500" : "")}
               onClick={(e) => {
                 const aboutSection = document.getElementById("about");
@@ -45,12 +45,12 @@ function Navbar() {
               </li>
             </NavLink>
             <NavLink
-              to="/testimonials"
+              to="/#testimonials"
               className={({ isActive }) => (isActive ? "text-yellow-500" : "")}
               onClick={(e) => {
-                const aboutSection = document.getElementById("testimonials");
-                if (aboutSection) {
-                  aboutSection.scrollIntoView({ behavior: "smooth" });
+                const testSection = document.getElementById("testimonials");
+                if (testSection) {
+                  testSection.scrollIntoView({ behavior: "smooth" });
                 }
               }}
             >
@@ -60,12 +60,12 @@ function Navbar() {
               </li>
             </NavLink>
             <NavLink
-              to="/contact"
+              to="/#contact"
               className={({ isActive }) => (isActive ? "text-yellow-500" : "")}
               onClick={(e) => {
-                const aboutSection = document.getElementById("contact");
-                if (aboutSection) {
-                  aboutSection.scrollIntoView({ behavior: "smooth" });
+                const contactSection = document.getElementById("contact");
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: "smooth" });
                 }
               }}
             >
@@ -96,7 +96,7 @@ function Navbar() {
                         setToggle(!toggle)
                     }}>Home</li> */}
               <NavLink
-                to="/about"
+                to="/#about"
                 onClick={(e) => {
                   const aboutSection = document.getElementById("about");
                   if (aboutSection) {
@@ -115,7 +115,7 @@ function Navbar() {
                 </li>
               </NavLink>
               <NavLink
-                to="/testimonials"
+                to="/#testimonials"
                 onClick={(e) => {
                   const aboutSection = document.getElementById("testimonials");
                   if (aboutSection) {
@@ -134,7 +134,7 @@ function Navbar() {
                 </li>
               </NavLink>
               <NavLink
-                to="/contact"
+                to="/#contact"
                 onClick={(e) => {
                   const aboutSection = document.getElementById("contact");
                   if (aboutSection) {
