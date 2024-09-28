@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 function Signup(){
     return(
         <>
-        <div className="overflow-hidden font-Roboto">
+        <div className="overflow-x-hidden overflow-y-hidden font-Roboto">
             <div className="bg-loginHero  bg-cover xl:bg-loginHero2 flex justify-center items-center h-screen w-screen">
                <div className=" h-[400px] w-[300px] sm-0:w-[400px] sm:w-[450px]  sm:h-[400px] md:w-[450px]  bg-white/15 backdrop-blur-sm shadow-xl border border-white/20 rounded-3xl p-6">
                <h1 className="text-center text-white   font-semibold text-3xl">Sign Up</h1>
