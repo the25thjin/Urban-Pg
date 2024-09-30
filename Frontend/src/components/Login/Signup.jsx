@@ -9,11 +9,11 @@ function Signup(){
                <h1 className="text-center text-white   font-semibold text-3xl">Sign Up</h1>
                <form className="mt-4">
                    <div className="flex-col flex  gap-4">
-                   <input className="rounded  placeholder:text-white shadow-sm text-black bg-white/10 text-[15px] border border-white/10 w-full p-3 h-[40px] outline-none " type="text" placeholder="Username"/>
-                   <input className="rounded  placeholder:text-white shadow-sm text-black bg-white/10 text-[15px] border border-white/10 w-full p-3 h-[40px] outline-none " type="text" placeholder="First Name"/>
-                    <input className="rounded  placeholder:text-white shadow-sm text-black bg-white/10 text-[15px] border border-white/10 w-full p-3 h-[40px] outline-none " type="email" placeholder="Email"/>
+                   <input required className="rounded  placeholder:text-white shadow-sm text-black bg-white/10 text-[15px] border border-white/10 w-full p-3 h-[40px] outline-none " type="text" placeholder="Username"/>
+                   <input required className="rounded  placeholder:text-white shadow-sm text-black bg-white/10 text-[15px] border border-white/10 w-full p-3 h-[40px] outline-none " type="text" placeholder="First Name"/>
+                    <input required className="rounded  placeholder:text-white shadow-sm text-black bg-white/10 text-[15px] border border-white/10 w-full p-3 h-[40px] outline-none " type="email" placeholder="Email"/>
       
-                    <input className="rounded text-black w-full shadow-sm placeholder:text-white  bg-white/10 text-[15px] p-3 h-[40px] outline-none " type="password" placeholder="Password"/>
+                    <input required className="rounded text-black w-full shadow-sm placeholder:text-white  bg-white/10 text-[15px] p-3 h-[40px] outline-none " type="password" placeholder="Password"/>
                     </div> 
                     {/* <div className="flex mt-9 justify-between text-[15px] text-black  ">
                         <label>
