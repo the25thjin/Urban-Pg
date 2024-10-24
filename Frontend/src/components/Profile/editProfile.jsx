@@ -49,6 +49,7 @@ function EditProfile(){
                   <div className=" mt-7 flex justify-between flex-col ">
                     <h1 className="text-left"> 1234567890</h1>
                     <h1> abc@gmail.com</h1>
+                    
                   </div>
                 </div>
 
