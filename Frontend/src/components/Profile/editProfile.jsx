@@ -1,6 +1,10 @@
 import user from "../../assets/userImage.jpg";
-
+import { profileAtom } from "../../assets/atoms";
+import { useAtom } from "jotai";
+import { Link } from "react-router-dom";
 function EditProfile(){
+    const [profile, setProfile] = useAtom(profileAtom)
+
     return(
         <>
          <div className="overflow-x-hidden overflow-y-hidden font-Roboto">
@@ -95,16 +99,17 @@ function EditProfile(){
                 </div>
                 <div className="mt-6 md:hidden">
                   <textarea
-                    readOnly
-                    maxLength={100}
-                    value={"Hey my name is Mann"}
+                    maxLength={50}
+                    value={profile.bio}
+                    onChange={(e)=>setProfile({...profile, bio:e.target.value})}
                     className="text-black shadow-xl border  text-sm resize-none w-[250px] sm:w-[350px] md:w-[250px] xl:w-[350px] h-[100px] rounded-md bg-white/45 text-left p-2 outline-none"
                   />
                 </div>
                 <div className="md:hidden absolute right-6 bottom-6">
+                  <Link to={"/profile"}>
                   <button className="bg-white/45 hover:bg-white/10 text-sm duration-200 transition ease-in-out hover:scale-110 border cursor-pointer shadow-lg p-2 w-[110px]  rounded-3xl">
-                    Edit Profile
-                  </button>
+                    Save
+                  </button></Link>
                 </div>
               </div>
  {/* --------------------------------------------2nd block------------------------------------- */}
@@ -180,16 +185,18 @@ function EditProfile(){
                 </div>
                 <div className="mt-6">
                   <textarea
-                    readOnly
+                    
                     maxLength={50}
-                    value={"Hey my name is Mann"}
+                    value={profile.bio}
+                    onChange={(e)=>setProfile({...profile, bio:e.target.value})}
                     className="text-black shadow-xl border text-base resize-none w-[250px] sm:w-[350px] md:w-[400px] lg:w-[450px] xl:w-[550px] 2xl:w-[650px] h-[200px] rounded-md bg-white/45 text-left p-2 outline-none"
                   />
                 </div>
                 <div className=" absolute right-6 bottom-6">
+                  <Link to={"/profile"}>
                   <button  className="bg-white/45 text-sm duration-200 transition ease-in-out hover:scale-110 border hover:bg-white/10 cursor-pointer shadow-lg p-2 w-[110px]  rounded-3xl">
-                    Edit Profile
-                  </button>
+                    Save
+                  </button></Link>
                 </div>
               </div>
             </div>

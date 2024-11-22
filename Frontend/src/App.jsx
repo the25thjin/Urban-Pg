@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
     <div className="overflow-x-hidden">
       <Routes>
-       <Route path="/" element={<Layout/>}/> 
+      <Route path="/" element={<Layout/>}/> 
       <Route path="login" element={<Login/>}/>
       <Route path="sign-up" element={<Signup/> }/> 
       <Route path="profile" element={<Profile/>}/>

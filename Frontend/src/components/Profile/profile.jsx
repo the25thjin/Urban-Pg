@@ -1,5 +1,12 @@
 import user from "../../assets/userImage.jpg";
+import { Link } from "react-router-dom"
+import { profileAtom } from "../../assets/atoms";
+import { useAtom } from "jotai";
+
 function Profile() {
+
+  const [profile] = useAtom(profileAtom)
+
   return (
     <>
       <div className="overflow-x-hidden overflow-y-hidden font-Roboto">
@@ -16,9 +23,9 @@ function Profile() {
                     className="bg-cover w-[100px] md:w-[230px] xl:w-[300px]  md:h-[230px] h-[100px] md:left-[35px] xl:left-[50px] xl:h-[300px] md:top-[50px] xl:top-[40px] relative left-5 top-3.5 rounded-full"
                   />
                   <div className="sm:ml-9 md:ml-0 ">
-                    <h1 className="text-lg md:text-2xl mt-10 ">Mann Rana</h1>
+                    <h1 className="text-lg md:text-2xl mt-10 ">{profile.name}</h1>
                     <div>
-                      <span className="text-sm md:text-lg">the25thjin | he/him</span>
+                      <span className="text-sm md:text-lg">{profile.username} | {profile.gender}</span>
                     </div>
                   </div>
                 </div>
@@ -46,8 +53,8 @@ function Profile() {
                     </svg>
                   </div>
                   <div className=" mt-7 flex justify-between flex-col ">
-                    <h1 className="text-left"> 1234567890</h1>
-                    <h1> abc@gmail.com</h1>
+                    <h1 className="text-left">{profile.phone}</h1>
+                    <h1> {profile.email}</h1>
                   </div>
                 </div>
 
@@ -83,10 +90,10 @@ function Profile() {
                     </div>
                     <div className="flex mt-2 text-sm justify-between flex-col">
                       <a href="#" target="_blank">
-                        _mann.15_
+                       {profile.insta}
                       </a>
                       <a href="#" target="_blank" className="text-left">
-                        Mann
+                        {profile.facebook}
                       </a>
                     </div>
                   </div>
@@ -94,15 +101,17 @@ function Profile() {
                 <div className="mt-6 md:hidden">
                   <textarea
                     readOnly
-                    maxLength={100}
-                    value={"Hey my name is Mann"}
+                    maxLength={50}
+                    value={profile.bio}
                     className="text-black shadow-xl border  text-sm resize-none w-[250px] sm:w-[350px] md:w-[250px] xl:w-[350px] h-[100px] rounded-md bg-white/45 text-left p-2 outline-none"
                   />
                 </div>
                 <div className="md:hidden absolute right-6 bottom-6">
-                  <button className="bg-white/45 hover:bg-white/10 text-sm duration-200 transition ease-in-out hover:scale-110 border cursor-pointer shadow-lg p-2 w-[110px]  rounded-3xl">
+                  <Link to={"/profile/edit"}>
+                  <button  className="bg-white/45 hover:bg-white/10 text-sm duration-200 transition ease-in-out hover:scale-110 border cursor-pointer shadow-lg p-2 w-[110px]  rounded-3xl">
                     Edit Profile
                   </button>
+                  </Link>
                 </div>
               </div>
  {/* --------------------------------------------2nd block------------------------------------- */}
@@ -131,8 +140,8 @@ function Profile() {
                     </svg>
                   </div>
                   <div className=" mt-7 flex justify-between flex-col ">
-                    <h1 className="text-left"> 1234567890</h1>
-                    <h1> abc@gmail.com</h1>
+                    <h1 className="text-left"> {profile.phone}</h1>
+                    <h1>{profile.email} </h1>
                   </div>
                 </div>
 
@@ -167,11 +176,11 @@ function Profile() {
                       </svg>
                     </div>
                     <div className="flex mt-2 text-base justify-between flex-col">
-                      <a className="hover:text-orange-400 transition duration-200 ease-in-out" href="#" target="_blank">
-                        _mann.15_
+                      <a className="hover:text-orange-400 transition duration-200 ease-in-out" href={profile.insta} target="_blank">
+                        {profile.insta}
                       </a>
-                      <a  href="#" target="_blank" className="hover:text-orange-400 transition duration-200 ease-in-out text-left">
-                        Mann
+                      <a  href={profile.facebook} target="_blank" className="hover:text-orange-400 transition duration-200 ease-in-out text-left">
+                        {profile.facebook}
                       </a>
                     </div>
                   </div>
@@ -180,14 +189,16 @@ function Profile() {
                   <textarea
                     readOnly
                     maxLength={50}
-                    value={"Hey my name is Mann"}
+                    value={profile.bio}
                     className="text-black shadow-xl border text-base resize-none w-[250px] sm:w-[350px] md:w-[400px] lg:w-[450px] xl:w-[550px] 2xl:w-[650px] h-[200px] rounded-md bg-white/45 text-left p-2 outline-none"
                   />
                 </div>
                 <div className=" absolute right-6 bottom-6">
+                <Link to={"/profile/edit"}>
                   <button  className="bg-white/45 text-sm duration-200 transition ease-in-out hover:scale-110 border hover:bg-white/10 cursor-pointer shadow-lg p-2 w-[110px]  rounded-3xl">
                     Edit Profile
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>
