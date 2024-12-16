@@ -4,7 +4,7 @@ function Signup(){
     return(
         <>
         <div className="overflow-x-hidden overflow-y-hidden font-Roboto">
-            <div className="bg-loginHero  bg-cover xl:bg-loginHero2 flex justify-center items-center h-screen w-screen">
+            <div className="bg-orange-800/25  bg-cover xl:bg-orange-800/25 flex justify-center items-center h-screen w-screen">
                <div className=" h-[400px] w-[300px] sm-0:w-[400px] sm:w-[450px]  sm:h-[400px] md:w-[450px]  bg-white/15 backdrop-blur-sm shadow-xl border border-white/20 rounded-3xl p-6">
                <h1 className="text-center text-white   font-semibold text-3xl">Sign Up</h1>
                <form className="mt-4">
@@ -24,7 +24,7 @@ function Signup(){
                        
                     </div> */}
 
-                        <button type="submit" className="bg-white w-full hover:shadow-yellow-600 transition delay-75 ease-in-out duration-300 hover:shadow-xl mt-3 rounded-2xl h-[35px] ">Sign Up</button>
+                        <button type="submit" className="bg-white w-full hover:shadow-orange-600 transition delay-75 ease-in-out duration-300 hover:shadow-xl mt-3 rounded-2xl h-[35px] ">Sign Up</button>
 
                         <div className="text-[15px] text-center mt-4">
                             Already have an account? <Link className="hover:text-blue-500 font-bold" to='/login'>Login</Link>
