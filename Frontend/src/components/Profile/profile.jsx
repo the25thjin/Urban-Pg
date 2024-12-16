@@ -10,7 +10,7 @@ function Profile() {
   return (
     <>
       <div className="overflow-x-hidden overflow-y-hidden font-Roboto">
-        <div className="bg-profileHero p-10 text-white bg-cover w-screen h-screen">
+        <div className="bg-orange-800/25 p-10 text-white bg-cover w-screen h-screen">
           <div className="flex h-screen flex-col  gap-10  items-center">
             <h1 className="text-center p-4 font-semibold text-2xl sm:text-3xl">
               My Profile

@@ -8,27 +8,28 @@ function EditProfile(){
     return(
         <>
          <div className="overflow-x-hidden overflow-y-hidden font-Roboto">
-        <div className="bg-profileHero p-10 text-white bg-cover w-screen h-screen">
+        <div className="bg-orange-800/25 p-10 text-white bg-cover w-screen h-screen">
           <div className="flex h-screen flex-col  gap-10  items-center">
             <h1 className="text-center p-4 font-semibold text-2xl sm:text-3xl">
               My Profile
             </h1>
             <div className="flex     gap-4 mb-16  justify-center items-center ">
-              <div className="w-[300px] sm:w-[400px] md:w-[300px] xl:w-[400px] h-[500px]  bg-white/15 backdrop-blur-sm border border-white/15  shadow-2xl text-center rounded-2xl">
+              <div className="w-[300px] sm:w-[400px] md:w-[300px] xl:w-[400px] h-[560px] md:h-[500px]  bg-white/15 backdrop-blur-sm border border-white/15  shadow-2xl text-center rounded-2xl">
                 <div className="flex md:flex-col gap-12">
                   <img
                     src={user}
                     className="bg-cover w-[100px] md:w-[230px] xl:w-[300px]  md:h-[230px] h-[100px] md:left-[35px] xl:left-[50px] xl:h-[300px] md:top-[50px] xl:top-[40px] relative left-5 top-3.5 rounded-full"
                   />
                   <div className="sm:ml-9 md:ml-0 ">
-                    <h1 className="text-lg md:text-2xl mt-10 ">Mann Rana</h1>
+                    <textarea maxLength={15}  className="text-lg text-black md:text-2xl mt-10  shadow-xl border  resize-none w-[100px]  sm:w-[150px] md:w-[200px] lg:w-[250px] xl:w-[250px] 2xl:w-[250px] h-[40px] md:h-[50px] rounded-md bg-white/45 p-2 outline-none text-center"  value={profile.name} onChange={(e)=>setProfile({...profile, name:e.target.value})} />
+                    {/* `<h1 className="text-lg md:text-2xl mt-10 ">Mann Rana</h1>` */}
                     <div>
                       <span className="text-sm md:text-lg">the25thjin | he/him</span>
                     </div>
                   </div>
                 </div>
                 <div className="md:hidden flex mt-3 ml-1">
-                  <div className="flex w-[60px] flex-col ">
+                  <div className="flex gap-[12px] mt-2 w-[60px] flex-col ">
                     <svg
                       className="size-6  mt-7 ml-6"
                       xmlns="http://www.w3.org/2000/svg"
@@ -50,9 +51,11 @@ function EditProfile(){
                       <path d="M4.17 49.14a1.5 1.5 0 0 1-1-2.62l18.4-16.41a1.5 1.5 0 0 1 2 2.24L5.17 48.76a1.46 1.46 0 0 1-1 .38zm55.66 0a1.46 1.46 0 0 1-1-.38l-18.4-16.41a1.5 1.5 0 1 1 2-2.24l18.39 16.41a1.5 1.5 0 0 1-1 2.62z"></path>
                     </svg>
                   </div>
-                  <div className=" mt-7 flex justify-between flex-col ">
-                    <h1 className="text-left"> 1234567890</h1>
-                    <h1> abc@gmail.com</h1>
+                  <div className=" mt-7 flex gap-3 justify-between flex-col ">
+                  <textarea maxLength={15}  className="text-lg text-black md:text-2xl  shadow-xl border  resize-none w-[200px]  sm:w-[300px] md:w-[290px] lg:w-[300px] xl:w-[250px] 2xl:w-[250px] h-[40px] md:h-[50px] rounded-md bg-white/45 p-2 outline-none "  value={profile.phone} onChange={(e)=>setProfile({...profile, phone:e.target.value})} />
+                  <textarea maxLength={15}  className="text-lg text-black md:text-2xl  shadow-xl border  resize-none w-[200px]  sm:w-[300px] md:w-[220px] lg:w-[250px] xl:w-[250px] 2xl:w-[250px] h-[40px] md:h-[50px] rounded-md bg-white/45 p-2 outline-none "  value={profile.email} onChange={(e)=>setProfile({...profile, email:e.target.value})} />
+                    {/* <h1 className="text-left"> 1234567890</h1>
+                    <h1> abc@gmail.com</h1> */}
                     
                   </div>
                 </div>
@@ -60,7 +63,7 @@ function EditProfile(){
                 <div className="mt-4 ml-7 md:hidden">
                   {/* <h1 className="text-left">My Social's -</h1> */}
                   <div className="flex gap-4">
-                    <div>
+                    <div className="flex gap-[12px] mt-2  flex-col">
                       <svg
                         className="mt-2"
                         xmlns="http://www.w3.org/2000/svg"
@@ -87,13 +90,14 @@ function EditProfile(){
                         ></path>
                       </svg>
                     </div>
-                    <div className="flex mt-2 text-sm justify-between flex-col">
-                      <a href="#" target="_blank">
+                    <div className="flex mt-2 gap-3 text-sm justify-between flex-col">
+                    <textarea maxLength={15}  className="text-lg text-black md:text-2xl  shadow-xl border  resize-none w-[200px]  sm:w-[300px] md:w-[220px] lg:w-[250px] xl:w-[250px] 2xl:w-[250px] h-[40px] md:h-[50px] rounded-md bg-white/45 p-2 outline-none "  value={profile.insta} onChange={(e)=>setProfile({...profile, insta:e.target.value})} /> <textarea maxLength={15}  className="text-lg text-black md:text-2xl  shadow-xl border  resize-none w-[200px]  sm:w-[300px] md:w-[220px] lg:w-[250px] xl:w-[250px] 2xl:w-[250px] h-[40px] md:h-[50px] rounded-md bg-white/45 p-2 outline-none "  value={profile.facebook} onChange={(e)=>setProfile({...profile, facebook:e.target.value})} />
+                      {/* <a href="#" target="_blank">
                         _mann.15_
                       </a>
                       <a href="#" target="_blank" className="text-left">
                         Mann
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
