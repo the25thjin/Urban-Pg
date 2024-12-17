@@ -106,7 +106,12 @@ function Profile() {
                     className="text-black shadow-xl border  text-sm resize-none w-[250px] sm:w-[350px] md:w-[250px] xl:w-[350px] h-[100px] rounded-md bg-white/45 text-left p-2 outline-none"
                   />
                 </div>
-                <div className="md:hidden absolute right-6 bottom-6">
+                <div className="md:hidden  absolute right-6 bottom-6">
+                  <Link to={"/#"}>
+                  <button  className="bg-white/45 hover:bg-white/10 text-sm duration-200 transition ease-in-out hover:scale-110 border cursor-pointer shadow-lg p-2 w-[90px] mr-2  rounded-3xl">
+                    Back
+                  </button>
+                  </Link>
                   <Link to={"/profile/edit"}>
                   <button  className="bg-white/45 hover:bg-white/10 text-sm duration-200 transition ease-in-out hover:scale-110 border cursor-pointer shadow-lg p-2 w-[110px]  rounded-3xl">
                     Edit Profile
@@ -194,6 +199,11 @@ function Profile() {
                   />
                 </div>
                 <div className=" absolute right-6 bottom-6">
+                <Link to={"/#"}>
+                  <button  className="bg-white/45 hover:bg-white/10 text-sm duration-200 transition ease-in-out hover:scale-110 border cursor-pointer shadow-lg p-2 w-[90px] mr-2  rounded-3xl">
+                    Back
+                  </button>
+                  </Link>
                 <Link to={"/profile/edit"}>
                   <button  className="bg-white/45 text-sm duration-200 transition ease-in-out hover:scale-110 border hover:bg-white/10 cursor-pointer shadow-lg p-2 w-[110px]  rounded-3xl">
                     Edit Profile

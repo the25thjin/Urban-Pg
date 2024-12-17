@@ -110,10 +110,12 @@ function EditProfile(){
                   />
                 </div>
                 <div className="md:hidden absolute right-6 bottom-6">
+                  
                   <Link to={"/profile"}>
                   <button className="bg-white/45 hover:bg-white/10 text-sm duration-200 transition ease-in-out hover:scale-110 border cursor-pointer shadow-lg p-2 w-[110px]  rounded-3xl">
                     Save
                   </button></Link>
+                  
                 </div>
               </div>
  {/* --------------------------------------------2nd block------------------------------------- */}
