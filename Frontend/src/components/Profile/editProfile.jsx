@@ -24,7 +24,7 @@ function EditProfile(){
                     <textarea maxLength={15}  className=" text-black md:text-2xl mt-10  shadow-xl border  resize-none w-[100px]  sm:w-[150px] md:w-[200px] lg:w-[250px] xl:w-[250px] 2xl:w-[250px] h-[40px] md:h-[50px] rounded-md bg-white/45 p-2 outline-none text-center"  value={profile.name} onChange={(e)=>setProfile({...profile, name:e.target.value})} />
                     {/* `<h1 className="text-lg md:text-2xl mt-10 ">Mann Rana</h1>` */}
                     <div>
-                      <span className="text-sm md:text-lg">the25thjin | he/him</span>
+                    <span className="text-sm md:text-lg">{profile.username} | {profile.gender}</span>
                     </div>
                   </div>
                 </div>

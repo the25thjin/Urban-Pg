@@ -1,12 +1,12 @@
 import {atom} from "jotai"
 
 export const profileAtom = atom({
-    name:"Saumya Rana",
-    email:"rangasaumya18@gmail.com",
-    bio:"bla bla",
+    name:"abc",
+    email:"abc@gmail.com",
+    bio:"lorem",
     phone : "123457890",
-    username:"saumya15",
-    gender: "she/her",
+    username:"abc15",
+    gender: "male",
     insta:"",
     facebook:"",
     avatar: ""
