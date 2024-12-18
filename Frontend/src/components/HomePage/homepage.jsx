@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-
+import NavBar from "../Navbar/navbar";
 
 
 
 function HomePage(){
     return(
         <>
-            <div className="text-white bg-black/40 w-screen h-screen ">
-                hello people
+            <div className="text-white bg-black w-screen h-screen ">
+                <NavBar/>
             </div>
         </>
     )
