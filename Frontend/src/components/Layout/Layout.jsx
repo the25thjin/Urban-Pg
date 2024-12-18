@@ -1,10 +1,10 @@
-import Navbar from "../Homepage/navbar";
-import Hero from "../Homepage/hero";
-import About from "../Homepage/about";
-import WhyUs from "../Homepage/whyus";
-import Testimonials from "../Homepage/testomonials";
-import Contact from "../Homepage/contact";
-import Footer from "../Homepage/footer";
+import Navbar from "../Landingpage/navbar";
+import Hero from "../Landingpage/hero";
+import About from "../Landingpage/about";
+import WhyUs from "../Landingpage/whyus";
+import Testimonials from "../Landingpage/testomonials";
+import Contact from "../Landingpage/contact";
+import Footer from "../Landingpage/footer";
 
 
 function Layout() {
