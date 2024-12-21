@@ -12,7 +12,7 @@ function NavBar(){
                                 <Link to={"/hoe"}>
                                  <img src={logo} className="w-[180px] cursor-pointer mt-2 ml-5 h-[80px]" alt="logo" /></Link>
                             </div>
-                            <div className="bg-red-500 w-[500px] h-full  ">d
+                            <div className="bg-red-500 w-[500px] h-full ">d
                                     
                             </div>          
                     </div>
