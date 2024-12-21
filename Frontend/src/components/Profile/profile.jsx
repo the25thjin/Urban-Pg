@@ -107,7 +107,7 @@ function Profile() {
                   />
                 </div>
                 <div className="md:hidden  absolute right-6 bottom-6">
-                  <Link to={"/#"}>
+                  <Link to={"/home"}>
                   <button  className="bg-white/45 hover:bg-white/10 text-sm duration-200 transition ease-in-out hover:scale-110 border cursor-pointer shadow-lg p-2 w-[90px] mr-2  rounded-3xl">
                     Back
                   </button>
@@ -199,7 +199,7 @@ function Profile() {
                   />
                 </div>
                 <div className=" absolute right-6 bottom-6">
-                <Link to={"/#"}>
+                <Link to={"/home"}>
                   <button  className="bg-white/45 hover:bg-white/10 text-sm duration-200 transition ease-in-out hover:scale-110 border cursor-pointer shadow-lg p-2 w-[90px] mr-2  rounded-3xl">
                     Back
                   </button>

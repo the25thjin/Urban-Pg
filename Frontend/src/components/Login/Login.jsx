@@ -21,7 +21,7 @@ function Login(){
                         <Link className="hover:text-blue-500" to='/forgot=password'>Forgot Password?</Link>
                         {/* <Link className="hover:text-blue-500" to='/sign-up'>Sign up</Link> */}
                     </div>
-
+                    {/* <Link></Link> */}
                         <button type="submit" className="bg-white w-full hover:shadow-orange-600 transition delay-75 ease-in-out duration-300 hover:shadow-xl mt-3 rounded-2xl h-[35px] ">Login</button>
 
                         <div className="text-[15px] text-center mt-4">
