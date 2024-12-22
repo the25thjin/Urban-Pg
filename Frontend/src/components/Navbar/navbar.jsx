@@ -16,7 +16,7 @@ function NavBar(){
                                     <Link>abc</Link>
                                     <Link>abc</Link>
                                     <Link to={'/profile'} >Profile</Link>
-                                    <Link type="submit" className="bg-red-700  rounded-lg hover:bg-red-600 hover:scale-105 text-center h-[30px] w-[90px] transition duration-150 ease-in-out delay-75" to={'/login'}>Logout</Link>
+                                    <Link type="submit " className="bg-red-700  rounded-lg hover:bg-red-600 hover:scale-105 text-center h-[30px] w-[90px] transition duration-150 ease-in-out delay-75" to={'/login'}>Logout</Link>
                             </div>          
                     </div>
                 </div>
